@@ -18,7 +18,7 @@ The module uses **spaCy (`en_core_web_sm`)** for text processing:
 2. **Stopword Removal** – Removes functional words like *the*, *is*, *at*, etc.
 3. **Named Entity Recognition (NER)** – Captures domain-specific entities (e.g., *CAA-2*, *LKR 109 million*).
 
-### 🧮 Scoring Formula
+### Scoring Formula
 After filtering and extracting all unique tokens and named entities:
 ```
 score = min(1.0, round(math.log1p(unique_terms) / math.log1p(50), 3))
@@ -63,13 +63,13 @@ If OpenAI is unavailable, the system prints a warning and safely continues with 
 
 ## 4. Testing Overview
 
-### 🧪 Unit Tests – `tests/test_term_count_scoring.py`
+### Unit Tests – `tests/test_term_count_scoring.py`
 Covers:
 - Basic single-term question
 - Empty string input
 - Comparison between diverse and simple queries
 
-### 🔗 Integration Tests – `tests/integration_test_term_count_scoring.py`
+### Integration Tests – `tests/integration_test_term_count_scoring.py`
 Simulates real-world questions and checks scoring consistency:
 - **Simple query:** “When is the 1st payment?” → ~0.28
 - **Medium query:** “Evaluate whether withholding payments…” → ~0.67
@@ -80,20 +80,20 @@ Simulates real-world questions and checks scoring consistency:
 
 ## 5. Setup & Installation Notes
 
-### 📦 Installation
+### Installation
 ```bash
 poetry add spacy
 poetry add openai
 python -m spacy download en_core_web_sm
 ```
 
-### 🔑 Environment Variables
+### Environment Variables
 A valid OpenAI key must be stored in `.env`:
 ```
 OPENAI_API_KEY=sk-...
 ```
 
-### ▶️ Running Tests
+### Running Tests
 ```bash
 PYTHONPATH=$(pwd)/src poetry run pytest -sv tests/term_count_scoring.py
 PYTHONPATH=$(pwd)/src poetry run pytest -sv tests/integration_test_term_count_scoring.py
@@ -103,13 +103,13 @@ PYTHONPATH=$(pwd)/src poetry run pytest -sv tests/integration_test_term_count_sc
 
 ## 6. Design Decisions & Deferred Ideas
 
-### ✅ Implemented
+### Implemented
 - Tokenization + Stopword removal via spaCy
 - Named entity extraction
 - Logarithmic normalization
 - Optional GPT-based refinement
 
-### ⚙️ Skipped (For Future Work)
+### Skipped (For Future Work)
 - NLTK-based token comparison (redundant with spaCy)
 - Weighted term scoring based on POS importance
 - LLM embedding-based complexity detection
