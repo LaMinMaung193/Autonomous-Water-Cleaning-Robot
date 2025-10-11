@@ -12,7 +12,7 @@ The higher the diversity of terms and entities, the higher the perceived complex
 
 ## 2. Core Design and Logic
 
-### 🧠 NLP Processing Pipeline
+### NLP Processing Pipeline
 The module uses **spaCy (`en_core_web_sm`)** for text processing:
 1. **Tokenization & Lemmatization** – Normalizes words to their base forms.
 2. **Stopword Removal** – Removes functional words like *the*, *is*, *at*, etc.
