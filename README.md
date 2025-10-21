@@ -76,7 +76,9 @@ L --> M[Go to Idle / Wait for Next Cycle]
 D -->|No| M
 M --> C
 
+
 ---
+
 
 ##  How to Run the Project
 
@@ -98,7 +100,9 @@ M --> C
 
 5. Set the working time using the keypad.
 
+
 ---
+
 
 ##  Libraries Used
 
@@ -112,10 +116,15 @@ Keypad_I2C.h — Matrix keypad
 
 Servo.h — Servo motor control
 
+---
+
 ## 📜 License
 
 This project is open-source for educational and research purposes.
 © 2025 La Min Maung
+
+
+---
 
 ## 👤 Author
 
@@ -123,3 +132,4 @@ La Min Maung
 King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
 Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
 
+---
