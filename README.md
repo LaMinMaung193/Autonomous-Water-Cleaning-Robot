@@ -56,22 +56,55 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 
 ---
 
-## ⚙️ System Flowchart
+## 🚀 Getting Started
+Follow these steps to upload the code and run the project on your ESP8266 NodeMCU.
 
-```mermaid
-flowchart TD
-A[Start] --> B[Initialize System & RTC]
-B --> C[Check Current Time]
-C --> D{Is it Operating Time?}
-D -->|Yes| E[Activate Motors & Conveyor]
-E --> F[Check for Obstacles via Ultrasonic Sensor]
-F -->|Obstacle Detected| G[Adjust Direction]
-F -->|No Obstacle| H[Continue Cleaning]
-G --> H
-H --> I{Operation Time Over?}
-I -->|Yes| J[Stop All Motors & Conveyor]
-J --> K[Activate Buzzer]
-K --> L[Display Status on LCD]
-L --> M[Go to Idle / Wait for Next Cycle]
-D -->|No| M
-M --> C
+**Prerequisites**
+-Arduino IDE installed.
+-ESP8266 board support package installed in the Arduino IDE.
+
+**Installation and Setup**
+1. Open the project file, src/main_code.ino, in the Arduino IDE.
+2. Install Required Libraries: All necessary libraries are listed below. For libraries like Wire.h and Servo.h which are usually built-in, no action is needed. For the custom libraries, you must install them via the Arduino Library Manager or by placing the files from the libraries/ folder into your Arduino sketchbook's libraries folder:
+
+-LiquidCrystal_I2C
+
+-RTClib
+
+-Keypad_I2C
+
+-Servo (The Servo.h library was in your 'Libraries Used' list but missing from the 'How to Run' list; it is included here).
+
+3. In the Arduino IDE, go to Tools > Board > ESP8266 Boards and select NodeMCU 1.0 (ESP-12E Module) (or the correct NodeMCU board for your setup).
+
+4. Upload the Code: Click the Upload button in the Arduino IDE.
+
+5. Set Operating Time: Once uploaded, use the connected keypad to configure the desired operating hours for the cleaning robot.
+
+---
+
+## 📚 Libraries Used
+Library,Function
+Wire.h,Handles I²C communication for the LCD and Keypad.
+LiquidCrystal_I2C.h,Driver for the I²C-enabled LCD display.
+RTClib.h,"Interface library for the Real-Time Clock (e.g., DS3231)."
+Keypad_I2C.h,Manages input from the I²C Matrix Keypad.
+Servo.h,Control library for the Servo Motor.
+
+---
+
+## 📜 License
+This project is licensed under the MIT License for open-source use. It is intended for educational and research purposes.
+
+© 2025 La Min Maung
+
+---
+
+## 👤 Author & Contributor
+La Min Maung
+
+Affiliation: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
+
+Expertise: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
+
+---
