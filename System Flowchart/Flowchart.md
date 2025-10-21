@@ -12,7 +12,7 @@ F -->|No Obstacle| H[Continue Cleaning]
 G --> H
 H --> I{Operation Time Over?}
 I -->|Yes| J[Stop All Motors & Conveyor]
-I -->|No| E
+I -->|No| F
 J --> K[Activate Buzzer]
 K --> L[Display Status on LCD]
 L --> M[Go to Idle / Wait for Next Cycle]
