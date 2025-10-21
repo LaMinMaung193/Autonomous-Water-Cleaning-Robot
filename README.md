@@ -56,7 +56,7 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 
 ---
 
-##  System Flowchart
+## ⚙️ System Flowchart
 
 ```mermaid
 flowchart TD
@@ -75,8 +75,3 @@ K --> L[Display Status on LCD]
 L --> M[Go to Idle / Wait for Next Cycle]
 D -->|No| M
 M --> C
-
-
----
-
-
