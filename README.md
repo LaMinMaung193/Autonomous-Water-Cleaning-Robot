@@ -1,4 +1,4 @@
-# Autonomous-Water-Cleaning-Robot
+# 🤖 Autonomous-Water-Cleaning-Robot
 
 An **autonomous microcontroller-based robot** designed to collect floating trash from water surfaces.  
 The system operates according to preset working hours, automatically starting and stopping based on the user's defined schedule, cleaning trash from water surfaces using a conveyor system, obstacle avoidance, and solar power based.
@@ -56,7 +56,7 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 
 ---
 
-## 🚀 Getting Started
+## How to Run the Project
 Follow these steps to upload the code and run the project on your ESP8266 NodeMCU.
 
 **Prerequisites**
@@ -67,13 +67,13 @@ Follow these steps to upload the code and run the project on your ESP8266 NodeMC
 1. Open the project file, src/main_code.ino, in the Arduino IDE.
 2. Install Required Libraries: All necessary libraries are listed below. For libraries like Wire.h and Servo.h which are usually built-in, no action is needed. For the custom libraries, you must install them via the Arduino Library Manager or by placing the files from the libraries/ folder into your Arduino sketchbook's libraries folder:
 
--LiquidCrystal_I2C
+*LiquidCrystal_I2C*
 
--RTClib
+*RTClib*
 
--Keypad_I2C
+*Keypad_I2C*
 
--Servo (The Servo.h library was in your 'Libraries Used' list but missing from the 'How to Run' list; it is included here).
+*Servo (The Servo.h library was in your 'Libraries Used' list but missing from the 'How to Run' list; it is included here).*
 
 3. In the Arduino IDE, go to Tools > Board > ESP8266 Boards and select NodeMCU 1.0 (ESP-12E Module) (or the correct NodeMCU board for your setup).
 
