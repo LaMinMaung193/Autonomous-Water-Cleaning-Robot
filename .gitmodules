@@ -7,3 +7,6 @@
 [submodule "libraries/real-time-clocks"]
 	path = libraries/real-time-clocks
 	url = https://github.com/adafruit/RTClib
+[submodule "libraries/servo"]
+	path = libraries/servo
+	url = https://github.com/arduino-libraries/Servo
