@@ -1,3 +1,6 @@
 [submodule "libraries/keypads"]
 	path = libraries/keypads
 	url = https://github.com/joeyoung/arduino_keypads
+[submodule "libraries/liquid-crystal-display"]
+	path = libraries/liquid-crystal-display
+	url = https://github.com/marcoschwartz/LiquidCrystal_I2C
