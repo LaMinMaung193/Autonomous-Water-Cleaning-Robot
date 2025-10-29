@@ -1,0 +1,3 @@
+[submodule "libraries/keypads"]
+	path = libraries/keypads
+	url = https://github.com/joeyoung/arduino_keypads
