@@ -1,15 +1,22 @@
 /*
- * Autonomous Water Cleaning Robot
- * Author: La Min Maung
- * Date: October 2025
+ * ----------------------------------------------------------------------------
+ *
+ * Project: Autonomous Water Cleaning Robot
+ * File:    main.ino (Main Program File)
+ * Author:  La Min Maung
+ * Date:    October 2025
+ * License: MIT License
+ * ----------------------------------------------------------------------------
  * Description:
- *   Main control program for autonomous microcontroller-based robot
- *   that collects floating trash from water surfaces.
- *   The system operates based on a preset time entered by the user,
- *   using RTC DS3231 for time tracking.
+ * Main control program for autonomous microcontroller-based robot that
+ * collects floating trash from water surfaces.
+ * The system operates based on a preset time entered by the user,
+ * using RTC DS3231 for time tracking.
  *
  * Controller: ESP8266 NodeMCU
  * Libraries Used: RTClib, Servo, Keypad_I2C, LiquidCrystal_I2C, Wire
+ *
+ * ----------------------------------------------------------------------------
  */
 
 #include <Wire.h>
