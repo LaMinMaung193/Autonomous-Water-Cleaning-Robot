@@ -1,4 +1,4 @@
-# 🤖 Autonomous-Water-Cleaning-Robot
+#  Autonomous-Water-Cleaning-Robot
 
 An **autonomous microcontroller-based robot** designed to collect floating trash from water surfaces.  
 The system operates according to preset working hours, automatically starting and stopping based on the user's defined schedule, cleaning trash from water surfaces using a conveyor system, obstacle avoidance, and solar power based.
@@ -6,7 +6,7 @@ The system operates according to preset working hours, automatically starting an
 
 ---
 
-## 🧠 Overview
+##  Overview
 
 This project integrates mechanical, electronic, and embedded systems to create a **time-controlled water cleaning robot**.  
 The robot navigates water surfaces, detects obstacles, and collects floating trash using a conveyor mechanism.  
@@ -56,7 +56,7 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 Follow these steps to upload the code and run the project on your **ESP8266 NodeMCU**.
 
@@ -78,7 +78,7 @@ Follow these steps to upload the code and run the project on your **ESP8266 Node
 
 ---
 
-## 📚 Libraries Used
+##  Libraries Used
 
 | Library | Function |
 | :--- | :--- |
