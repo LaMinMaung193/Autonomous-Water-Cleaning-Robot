@@ -8,7 +8,7 @@ The system operates according to preset working hours, automatically starting an
 
 ##  Overview
 
-This project integrates mechanical, electronic, and embedded systems to create a **time-controlled water cleaning robot**.  
+This project integrates automation, electronic, and embedded systems to create a **time-controlled water cleaning robot**.  
 The robot navigates water surfaces, detects obstacles, and collects floating trash using a conveyor mechanism.  
 
 ---
@@ -32,11 +32,12 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 | **L298N Motor Driver** | Dual H-Bridge, up to 2A per channel | Drives propulsion DC motors |
 | **DC Motors (x2)** | 5–12V, 300 RPM | Propulsion system for forward motion |
 | **Conveyor Belt Motor** | 5–12V, geared | Drives the trash collection conveyor |
+| **Single Channel Relay** | 5V-10A | Switching device for conveyor motors |
 | **LCD 16x2 (I2C)** | 5V, SDA/SCL interface | Displays status and real-time data |
 | **Keypad (4x4 I2C)** | Digital matrix input | User interface for setting time and parameters |
 | **Buzzer** | 5V DC | Audio alert at end of operation |
 | **Solar Panel** | 12V 5W | Charges battery through DC-DC converter |
-| **Li-Po Battery** | 7.4V, 2200 mAh | Power supply for motors and controller |
+| **Li-Po Battery** | 7.4V-2200 mAh,  7.4V-3600 mAh | Power supply for motors and controller |
 
 ---
 
@@ -46,11 +47,11 @@ The robot navigates water surfaces, detects obstacles, and collects floating tra
 |---------|------------------------|-------|
 | **RTC DS3231** | SDA → D2, SCL → D1 | I2C communication |
 | **LCD (I2C)** | SDA → D2, SCL → D1 | Shared I2C bus with RTC |
-| **Ultrasonic Sensor** | Trig → D5, Echo → D6 | Distance measurement |
-| **Servo Motor** | Signal → D7 | Controls sensor rotation |
-| **L298N Motor Driver** | IN1 → D3, IN2 → D4, IN3 → D8, IN4 → D0 | Motor control |
-| **Conveyor Motor** | Through Relay → D9 | Controlled by relay output |
-| **Buzzer** | → D10 | Alert output |
+| **Ultrasonic Sensor** | Trig → D3, Echo → 3/RX | Distance measurement |
+| **Servo Motor** | Signal → D4 | Controls sensor rotation |
+| **L298N Motor Driver** | IN1 → D5, IN2 → D6, IN3 → D7, IN4 → D8 | Motor control |
+| **Conveyor Motor** | Through Relay → 1/TX | Controlled by relay output |
+| **Buzzer** | → D0 | Alert output |
 | **Keypad (I2C)** | SDA → D2, SCL → D1 | For time input |
 | **Solar Panel** | → Buck Converter → Li-Po Battery | Power management |
 
@@ -67,7 +68,7 @@ Follow these steps to upload the code and run the project on your **ESP8266 Node
 ### Installation and Setup
 
 1.  Open the project file, `src/main_code.ino`, in the **Arduino IDE**.
-2.  **Install Required Libraries:** All necessary libraries are listed below. For libraries like `Wire.h` and `Servo.h` which are usually built-in, no action is needed. For the custom libraries, you must install them via the Arduino Library Manager or by placing the files from the `libraries/` folder into your Arduino sketchbook's `libraries` folder:
+2.  **Install Required Libraries:** All necessary libraries are listed below and added as submodules in libraries folder. For libraries like `Wire.h` and `Servo.h` which are usually built-in, no action is needed. For the custom libraries, you must install them via the Arduino Library Manager or by placing the files from the `libraries/` folder into your Arduino sketchbook's `libraries` folder:
     * `LiquidCrystal_I2C`
     * `RTClib`
     * `Keypad_I2C`
@@ -105,3 +106,6 @@ Affiliation: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thaila
 Expertise: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
 
 ---
+
+## 👤👤 Other Contributors
+Saung Nadi Hlaing, Aung Moe Hein
