@@ -101,11 +101,24 @@ This project is licensed under the MIT License for open-source use. It is intend
 ## 👤 Author & Contributor
 La Min Maung
 
-Affiliation: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
+**Field:** **Electrical Engineering (Mechatronics)**
 
-Expertise: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
+**Affiliation**: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
+
+**Expertise**: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
 
 ---
 
 ## 👤👤 Other Contributors
 Saung Nadi Hlaing, Aung Moe Hein
+
+**Field:** **Electrical Engineering (Mechatronics)**
+
+---
+
+
+
+
+Affiliation: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
+
+Expertise: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
