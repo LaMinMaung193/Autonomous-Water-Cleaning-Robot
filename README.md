@@ -116,9 +116,3 @@ Saung Nadi Hlaing, Aung Moe Hein
 
 ---
 
-
-
-
-Affiliation: King Mongkut’s Institute of Technology Ladkrabang (KMITL), Thailand
-
-Expertise: Embedded & Mechatronics Enthusiast | PCB & Robotics Developer
